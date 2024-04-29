@@ -1,0 +1,56 @@
+/* Estilos para el menú superior */
+.top-menu {
+    background: linear-gradient(to bottom, #0056b3, #00274c); /* Fondo con efecto */
+    padding: 20px 0; /* Aumentamos el espacio vertical dentro del menú */
+    text-align: center;
+    border-top-left-radius: 50px; /* Redondeamos la esquina superior izquierda */
+    border-top-right-radius: 50px; /* Redondeamos la esquina superior derecha */
+    border-bottom-left-radius: 50px; /* Redondeamos la esquina inferior izquierda */
+    border-bottom-right-radius: 50px; /* Redondeamos la esquina inferior derecha */
+    margin: 0 auto; /* Centramos el menú horizontalmente */
+    max-width: 80%; /* Establecemos un ancho máximo para el menú al 80% de la página */
+}
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu ul li {
+    display: inline;
+    margin-right: 80px; /* Espacio entre elementos del menú */
+}
+
+.top-menu ul li:first-child {
+    margin-left: 0; /* Quitamos el margen izquierdo para el primer elemento */
+}
+
+.top-menu ul li:last-child {
+    margin-right: 0; /* Quitamos el margen derecho para el último elemento */
+}
+
+.top-menu ul li a {
+    color: #fff; /* Color de texto para los enlaces del menú */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 50px; /* Alineamos verticalmente los elementos del menú */
+    position: relative; /* Posicionamiento relativo para el ícono */
+}
+
+.top-menu ul li a img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Estilos para el icono de usuario */
+.top-menu ul li a i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}

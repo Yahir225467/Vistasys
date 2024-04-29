@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-menu {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.top-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos específicos para la página ClaveLogin */
+.main-title {
+    text-align: center;
+    color: #333;
+}
+
+.clave-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.clave-container h3 {
+    margin-bottom: 10px;
+}
+
+#clave-input {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#contador {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#countdown {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
