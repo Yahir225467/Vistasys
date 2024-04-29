@@ -1,0 +1,126 @@
+/* Estilos para el botón de retroceso */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none; /* Sin fondo para el botón */
+    border: none; /* Sin bordes para el botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es interactivo */
+}
+
+.back-button i {
+    color: #fff; /* Color blanco para el ícono dentro del botón */
+    font-size: 24px; /* Tamaño del ícono */
+}
+
+/* Estilos para el fondo animado */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que el fondo se quede detrás de otros elementos */
+    background: linear-gradient(45deg, #397bff, #24a5e6, #13f6e7); /* Gradiente de colores para el fondo */
+    background-size: 400% 400%; /* Tamaño del gradiente para permitir la animación */
+    animation: gradientBackground 10s ease infinite; /* Animación para mover el gradiente */
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilos restantes */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.smartwatch {
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background-color: #333; /* Color de fondo del smartwatch */
+    border-radius: 25px; /* Bordes redondeados */
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(244, 244, 244, 0.3); /* Sombra alrededor del smartwatch */
+    animation: slideIn 1s ease; /* Animación para deslizar el smartwatch hacia la vista */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el contenido exactamente en el medio */
+}
+
+.username {
+    text-align: center; /* Texto al centro */
+    padding: 10px;
+    color: #fff; /* Texto blanco */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px; /* Tamaño del texto */
+    animation: fadeIn 1s ease; /* Animación para aparición suave del texto */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.icon {
+    display: block;
+    margin-top: 5px;
+    animation: fadeInIcon 1s ease; /* Animación para aparición suave del icono */
+}
+
+@keyframes fadeInIcon {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.icon i {
+    color: red; /* Color rojo para el icono */
+    animation: rotateIcon 5s ease infinite, bounceIcon 5s ease infinite alternate; /* Animaciones para rotar y rebotar el icono */
+}
+
+@keyframes bounceIcon {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
