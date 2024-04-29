@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #397bff, #24a5e6, #13f6e7);/* Gradiente de colores */
+}
+
+.Titulos-SmartWatch {
+    color: #ccc;
+}
+
+.smartwatch {
+    width: 270px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(244, 244, 244, 0.3);
+}
+
+.screen {
+    background-color: #333;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.selected-number {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribución uniforme */
+    width: 100%;
+    margin-bottom: 10px; /* Reducir el margen inferior */
+}
+
+.arrow {
+    font-size: 16px; /* Reducir el tamaño de los botones de cambio de número */
+    padding: 6px 8px; /* Reducir el relleno */
+    border-radius: 3px; /* Redondear un poco los bordes */
+}
+
+.current-digit {
+    font-size: 20px; /* Reducir el tamaño del número */
+    padding: 6px 12px; /* Reducir el relleno */
+    border-radius: 3px; /* Redondear un poco los bordes */
+}
+
+.nip-inputs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinear horizontalmente */
+    margin-bottom: 10px; /* Reducir el margen inferior */
+}
+
+.nip-input {
+    width: 30px; /* Reducir el ancho de las casillas */
+    height: 30px; /* Reducir la altura de las casillas */
+    padding: 5px; /* Reducir el relleno */
+    margin: 0 3px; /* Reducir el margen entre las casillas */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px; /* Redondear un poco los bordes */
+    font-size: 14px; /* Reducir el tamaño del texto */
+}
+
+
+
+.nip-input {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    margin: 0 5px; /* Espacio entre las casillas */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Tamaño del texto */
+}
+
+/* Opcional: Cambiar el cursor al pasar sobre las casillas */
+.nip-input:hover {
+    cursor: text;
+}
