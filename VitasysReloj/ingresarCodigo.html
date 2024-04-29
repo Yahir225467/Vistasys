@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar Codigo</title>
+    <link rel="stylesheet" href="ingresarCodigoEstilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="smartwatch">
+        <div class="screen">
+            <h2 class="Titulos-SmartWatch">Ingresa NIP</h2>
+            <div class="nip-inputs-container">
+                <input type="text" class="nip-input" placeholder="NIP" maxlength="1">
+                <input type="text" class="nip-input" placeholder="NIP" maxlength="1">
+                <input type="text" class="nip-input" placeholder="NIP" maxlength="1">
+                <input type="text" class="nip-input" placeholder="NIP" maxlength="1">
+            </div>
+            <div class="selected-number"></div>
+            <div class="controls">
+                <button class="delete-button" onclick="borrarNumero()"><i class="fas fa-times"></i></button>
+                <button class="arrow left" onclick="changeDigit(-1)">&lt;</button>
+                <div class="current-digit">1</div>
+                <button class="arrow right" onclick="changeDigit(1)">&gt;</button>
+                <button class="add-button" onclick="agregarCodigo()"><i class="fas fa-plus"></i></button>
+            </div>            
+    </div>
+
+    <script src="ingresarCodigo.js"></script>
+
+</body>
+</html>
